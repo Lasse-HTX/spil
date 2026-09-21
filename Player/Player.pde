@@ -67,16 +67,32 @@ class Player {
     return runSpeed;
   }
 
-  void setliv(L) {
-   liv = liv + L;
+  void setLiv(int L) {
+    liv = liv + L;
   }
-  void setenergi(E){
-  energi = energi + E; 
+
+  void setPosition(PVector P) {
+    position = P.copy();
+  }
+  void setVelocity(PVector V) {
+    velocity = V.copy();
+  }
+  void setGrounded(boolean G) {
+    grounded = G;
+  }
+  void setEnergi(int E) {
+    energi = energi + E;
+  }
+  void setSize(float S){
+  size = size + S;
   
   }
-  void setPosition(P){
-  position
   
-  }
+   void setJumpSpeed(PVector J) {
+    jumpSpeed = J.copy();
   
 }
+ void setRunSpeed(PVector R) {
+    runSpeed = R.copy();
+ }
+ 
