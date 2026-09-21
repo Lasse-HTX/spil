@@ -1,0 +1,4 @@
+//goddag
+class Pickup{
+  
+}
