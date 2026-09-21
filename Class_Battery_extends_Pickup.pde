@@ -1,6 +1,14 @@
 class Battery extends Pickup {
-  void drawBattery()
-    size()
-    rect(position.x, position.y, size)
-}
+  float w;
+  float h;
+
+  Battery(PVector pos) {
+    super(pos);   
+    w = 50;
+    h = 20;
+  }
+
+  void drawBattery() {
+    rect(position.x, position.y, w, h);
+  }
 }
