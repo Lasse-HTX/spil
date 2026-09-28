@@ -18,7 +18,7 @@ class GameMaster {
     return score;
   }
   
-  PVector getLevel() {
+  int getLevel() {
     return level;
   }
   
