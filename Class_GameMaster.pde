@@ -6,9 +6,6 @@ class GameMaster {
   PVector gravity;
   int score;
 
-GameMaster(){}
-
-
-
-
+  GameMaster() {
+  }
 }
