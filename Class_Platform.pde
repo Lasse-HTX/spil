@@ -38,3 +38,5 @@ class Platform {
     if (player.position.x >= position.x-player.size/2 && player.position.x <= position.x+width+player.size/2 &&
       player.position.y+player.size/2 >= position.y && player.position.y+player.size/2 <= position.y+player.size/2 && player.velocity.y >= 0) {
     }
+  }
+}
