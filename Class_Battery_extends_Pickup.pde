@@ -10,11 +10,11 @@ class Battery extends Pickup {
     w = 50;
     h = 20;
   }
-}
 
-void drawBattery() {
-  if (pickedUp == false) {
-    rect(position.x, position.y, w, h);
+
+  void drawBattery() {
+    if (pickedUp == false) {
+      rect(position.x, position.y, w, h);
+    }
   }
-}
 }
