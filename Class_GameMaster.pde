@@ -1,3 +1,4 @@
+//Finn og Sebastian
 class GameMaster {
   Player player;
   ArrayList<Platform> platforms = new ArrayList<Platform>();
