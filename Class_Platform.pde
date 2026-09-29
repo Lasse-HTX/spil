@@ -2,7 +2,7 @@
 
 class Platform {
   PVector position;
-  float width;
+  float width; // det er reserveret ord  -  i bør kalde dem platformWidth etc.
   float height;
   PVector velocity;
 
@@ -33,10 +33,11 @@ class Platform {
   PVector getVelocity() {
     return velocity;
   }
-
+/* det er ikke platformens ansvar at lave Kolisition
   boolean collision(Player player) {
     if (player.position.x >= position.x-player.size/2 && player.position.x <= position.x+width+player.size/2 &&
       player.position.y+player.size/2 >= position.y && player.position.y+player.size/2 <= position.y+player.size/2 && player.velocity.y >= 0) {
     }
   }
+  */
 }

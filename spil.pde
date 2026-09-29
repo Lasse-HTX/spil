@@ -15,8 +15,8 @@ void setup() {
 void draw() {
   // Sets background color
   background(150);
-  // Runs player class
-  player();
+  // tegn spillet
+  gm.display();
 }
 
 // Called automatically by Processing when a key is pressed
@@ -46,7 +46,4 @@ void keyReleased() {
   if (key == 'd' || key == 'D' || keyCode == RIGHT) {
     keyRight = false;
   }
-}
-
-void player() {
 }

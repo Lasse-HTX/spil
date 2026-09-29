@@ -1,7 +1,7 @@
 //kristoffer (og johan)
 
 class Battery extends Pickup {
-  float w;
+  float w; // brug hele ord i stedet for bogstaver! width og height er reserveret i systemet, så det skal hedde noget andet - det gør det nemmere at læse!
   float h;
 
 
@@ -14,6 +14,7 @@ class Battery extends Pickup {
 
   void drawBattery() {
     if (pickedUp == false) {
+     // skal rektanglen ikke have en farve??? Husk! ryd op efter jer!
       rect(position.x, position.y, w, h);
     }
   }
