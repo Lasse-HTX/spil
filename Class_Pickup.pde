@@ -2,12 +2,11 @@
 
 class Pickup {
   PVector position;
-  boolean pickedUp;
+  boolean pickedUp = false;
 
   //konstruktør
   Pickup(PVector pos) {
     position = pos.copy();
-    //  hvad med jeres pickedUp? skal den ikke initialieres?
   }
 
   //metoder
@@ -23,7 +22,7 @@ class Pickup {
     pickedUp = true;
   }
 
-// skal vi lige bruge til test
+  // skal vi lige bruge til test
   void display() {
     // her skal den kun udskrive hvis pickedup er false
     fill(128);
