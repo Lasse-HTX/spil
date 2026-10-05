@@ -14,17 +14,21 @@ boolean keyRight = false;
 
 // Runs once on startup
 void setup() {
-  gm=new GameMaster();
   // Defines size of window
   size(800, 600);
+  //load the level
+  level.loadLevel();
+  player = new Player(level.getSpawnPosition());
 }
 
 // Draw loops infinitely
 void draw() {
   // Sets background color
   background(150);
-  // tegn spillet
-  gm.display();
+  // Display the level
+  level.display();
+  // Run the movement
+  movement();
 }
 
 // Called automatically by Processing when a key is pressed
@@ -53,5 +57,16 @@ void keyReleased() {
   }
   if (key == 'd' || key == 'D' || keyCode == RIGHT) {
     keyRight = false;
+  }
+}
+
+void movement() {
+  if (keyLeft) {
+    println(player.position.x);
+    player.position.add(player.runSpeed);
+    println("Hallo");
+  }
+  if (keyRight) {
+    player.position.x += player.runSpeed.x;
   }
 }

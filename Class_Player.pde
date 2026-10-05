@@ -1,5 +1,5 @@
 class Player {
-  int liv;
+  int liv=3;
   PVector position;
   PVector velocity;
   boolean grounded;
@@ -8,27 +8,16 @@ class Player {
   PVector jumpSpeed;
   PVector runSpeed;
 
+
 Player(PVector pos,PVector vel,boolean ground){
   position = pos.copy();
   velocity = vel.copy();
   grounded = ground;
-}
-
-  Player() {
-    liv = 3;
-
-    position = new PVector(100, 100);
-
-    velocity = new PVector (5, 0);
-
-    grounded = true;
-
-    energi = 50; // altid halvdelen (så 50%)
-
-    size = 12; // kun hvis player er en cirkel ellers er det x,y
-
-    jumpSpeed = new PVector(0, 5);
-    runSpeed = new PVector(0, 0);
+  energi = 50; // altid halvdelen (så 50%)
+  size = 12; // kun hvis player er en cirkel ellers er det x,y
+  jumpSpeed = new PVector(0, 5);
+  // Sætter lige runSpeed til 2 for vi har brug for det
+  runSpeed = new PVector(2, 0);
   }
 
   int getliv () {
@@ -68,8 +57,8 @@ Player(PVector pos,PVector vel,boolean ground){
     liv = liv + L;
   }
 
-  void setPosition(PVector P) {
-    position = P.copy();
+  void setPosition(PVector p) {
+    position = p.copy();
   }
   void setVelocity(PVector V) {
     velocity = V.copy();
