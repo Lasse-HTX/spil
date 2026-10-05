@@ -9,7 +9,7 @@ class Battery extends Pickup {
     super(pos);
     w = 50;
     h = 20;
-    imgBattery = loadImage("battery.png");
+    imgBattery = loadImage("Battery.png");
   }
 
 
