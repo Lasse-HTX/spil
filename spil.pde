@@ -1,4 +1,12 @@
-GameMaster gm;
+Player player;
+
+Level level = new Level();
+
+ArrayList<Platform> platforms = new ArrayList<Platform>();
+ArrayList<Pickup> pickups = new ArrayList<Pickup>();
+// i kan ikke sætte gravity til at være 0,8 når det er en PVector
+PVector gravity = new PVector(0, 0.8);
+int score = 0;
 
 // Keyboard input tracking
 boolean keyLeft = false;
@@ -28,14 +36,14 @@ void keyPressed() {
     keyRight = true;
   }
 
-/*
+  /*
 
-  // Jump action (only allowed if the player is touching the ground!)
-  if ((key == 'w' || key == 'W' || key == ' ' || keyCode == UP) && isOnGround) {
-    player.velocity.y = jumpForce; // Set vertical velocity to a strong upward (negative Y) value
-    isOnGround = false;
-  }
-  */
+   // Jump action (only allowed if the player is touching the ground!)
+   if ((key == 'w' || key == 'W' || key == ' ' || keyCode == UP) && isOnGround) {
+   player.velocity.y = jumpForce; // Set vertical velocity to a strong upward (negative Y) value
+   isOnGround = false;
+   }
+   */
 }
 
 // Called automatically by Processing when a key is released
