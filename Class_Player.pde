@@ -8,10 +8,10 @@ class Player {
   PVector jumpSpeed;
   PVector runSpeed;
 
-  Player() {
+  Player(PVector p) {
     liv = 3;
 
-    position = new PVector(100, 100);
+    position = p.copy();
 
     velocity = new PVector (5, 0);
 
@@ -22,7 +22,8 @@ class Player {
     size = 12; // kun hvis player er en cirkel ellers er det x,y
 
     jumpSpeed = new PVector(0, 5);
-    runSpeed = new PVector(0, 0);
+    // Sætter lige runSpeed til 2 for vi har brug for det
+    runSpeed = new PVector(2, 0);
   }
 
   int getliv () {
@@ -62,8 +63,8 @@ class Player {
     liv = liv + L;
   }
 
-  void setPosition(PVector P) {
-    position = P.copy();
+  void setPosition(PVector p) {
+    position = p.copy();
   }
   void setVelocity(PVector V) {
     velocity = V.copy();

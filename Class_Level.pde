@@ -114,6 +114,9 @@ class Level {
     JSONObject o = json.getJSONArray(key).getJSONObject(0);
     return new PVector(o.getFloat("x"), o.getFloat("y"));
   }
+  PVector getSpawnPosition() {
+    return spawn;
+  }
 
 
   /*
