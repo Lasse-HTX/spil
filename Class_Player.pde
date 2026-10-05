@@ -8,6 +8,12 @@ class Player {
   PVector jumpSpeed;
   PVector runSpeed;
 
+Player(PVector pos,PVector vel,boolean ground){
+  position = pos.copy();
+  velocity = vel.copy();
+  grounded = ground;
+}
+
   Player() {
     liv = 3;
 
