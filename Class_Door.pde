@@ -20,7 +20,7 @@ class Door {
 
   // Tegner døren
   void drawDoor() {
-    fill(120); // rydder i ud skal i også rydde op!!
+    fill(120); 
     rect(position.x, position.y, doorWidth, doorHeight);
     noFill();
   }
