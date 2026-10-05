@@ -5,7 +5,7 @@ class Key extends Pickup {
   PImage imgKey;
   Key(PVector pos) {
     super(pos);
-    imgKey = loadImage("key.png");
+    imgKey = loadImage("Key.png");
   }
 
 

@@ -4,7 +4,7 @@ class Coin extends Pickup {
   PImage imgCoin;
   Coin(PVector pos) {
     super(pos);
-    imgCoin = loadImage("coin.png");
+    imgCoin = loadImage("Coin.png");
   }
 
   void drawCoin() {
