@@ -2,16 +2,16 @@
 
 class Key extends Pickup {
 
+  PImage imgKey;
   Key(PVector pos) {
     super(pos);
+    imgKey = loadImage("key.png");
   }
 
 
   void drawKey() {
     if (pickedUp == false) {
-            // skal cirklen ikke have en farve??? Husk! ryd op efter jer!
-
-      circle(position.x, position.y, 20);
+      image(imgKey, position.x, position.y);
     }
   }
 }
