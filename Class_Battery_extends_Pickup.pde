@@ -1,21 +1,22 @@
 //kristoffer (og johan)
 
-class Battery extends Pickup {
+// OPGAVE 11: Et batteri er en slags Pickup. Ret linjen nedenfor, så Battery arver fra Pickup.
+// Spørgsmål: Hvilke variabler og metoder får Battery forærende ved at arve?
+class Battery {
   float w; // brug hele ord i stedet for bogstaver! width og height er reserveret i systemet, så det skal hedde noget andet - det gør det nemmere at læse!
   float h;
-  PImage imgBattery;
+
 
   Battery(PVector pos) {
     super(pos);
     w = 50;
     h = 20;
-    imgBattery = loadImage("Battery.png");
+    img = loadImage("Battery.png");
+    id = "battery";
   }
 
-
-  void drawBattery() {
-    if (pickedUp == false) {
-      image(imgBattery, position.x, position.y);
-    }
+  void collect(Player p) {
+    // OPGAVE 12: Når spilleren samler et batteri op, skal han have 25 mere energi.
+    // Hint: kig i Class_Player efter en set-metode til energi - hvad gør den præcist?
   }
 }

@@ -20,15 +20,9 @@ class MovingPlatform extends Platform {
 
   // Opdaterer platformens position
   void update() {
-    
-    // Flytter platformen op eller ned
-    position.y += velocity.y;
-
-    // Tjekker om platformen har nået en af grænserne
-    if (position.y <= minY || position.y >= maxY) {
-      
-      // Vender platformens retning
-      velocity.y *= -1;
-    }
+    // OPGAVE 15: Flyt platformen lodret med dens fart (velocity.y).
+    // Når den når minY eller maxY, skal den vende om.
+    // Ekstra: Level laver i dag kun almindelige Platform-objekter. Hvad skal der til,
+    // for at platforme med type "moving" i json-filen bliver til MovingPlatform?
   }
 }

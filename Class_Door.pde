@@ -14,8 +14,16 @@ class Door {
     // i har to konstanter i kan bruge, men de hedder det samme som i har kaldt jeres variabler - det bliver lidt bøvlet.
     //width = gm.canvasWidth * 0.05;
     //height = gm.canvasHeight * 0.15;
-    this.doorWidth = doorWidth*0.05;
-    this.doorHeight = doorHeight*0.15;
+    //this.doorWidth = doorWidth*0.05;   // doorWidth er 0 her, så døren blev 0 stor
+    //this.doorHeight = doorHeight*0.15;
+    this.doorWidth = 40;
+    this.doorHeight = 55;  // passer til dør-positionerne i json-filerne
+  }
+
+  // rører spilleren døren?
+  boolean touches(Player p) {
+    // OPGAVE 16: Returner true hvis spillerens position er inde i dørens rektangel, ellers false.
+    // Hint: dørens position er rektanglets øverste venstre hjørne.
   }
 
   // Tegner døren
